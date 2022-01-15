@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<title>WeVidPro</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://assets.videomaker.com/2021/11/Video-editing-software.jpg");
+  min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">SERVICES</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">"Professional Work at an affordable price"</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">We-vid<br>Pro</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>We-vid<br>Pro</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">We make videos!</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">OUR SERVICES</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-green">Video Editing</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-green">Photoshop</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-green">Vfx</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Birthday videos</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">A simple yet memorable birthday video for someone close to you!</p>
+      <hr>
+   
+      <h1><b>Youtube Video</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">A youtube video for your youtube channel with good edits!</p>
+      <hr>
+      
+      <h1><b>Short Film</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.00</span></h1>
+      <p class="w3-text-grey">A video promoting your message to the public!</p>
+      <hr>
+
+      <h1><b>Commercial</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.00</span></h1>
+      <p class="w3-text-grey">An advertisement for your company or product!</p>
+      <hr>
+
+      <h1><b>TikTok Video</b> <span class="w3-tag w3-red w3-round">best selling!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$30.00</span></h1>
+      <p class="w3-text-grey">A small yet eye catching video for your social media!</p>
+      <hr>
+
+      <h1><b>Trailer</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$40.00</span></h1>
+      <p class="w3-text-grey">A trailer for your movie which will hype your audience!</p>
+    </div>
+
+    <div id="Pasta"class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Magic Trick</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey">Silly trick to fool your friends and family!</p>
+      <hr>
+   
+      <h1><b>Video thumbnail!</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+      <p class="w3-text-grey">An eye catching video thumbnail for your video!</p>
+      <hr>
+      
+      <h1><b>Commercial</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.00</span></h1>
+      <p class="w3-text-grey">A promotion for your product/company!</p>
+      <hr>
+
+      <h1><b>Poster</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Poster for your movie!</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Superhero action</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$500.0</span></h1>
+      <p class="w3-text-grey">A treat for marvel/dc fans!</p>
+      <hr>
+   
+      <h1><b>Background design</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$750.0</span></h1>
+      <p class="w3-text-grey">Background design for green screen shots.</p>
+      <hr>
+   
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>We make videos" - As Many individuals and coorporations need people to make their videos or photos, we decided we would fill in that space of requirement. We have freelancers and employees who are passionate about Video editing and Photoshoping and we assure you we will satisfy you with our work! Our motto is to provide professional work at a affordable price!</p>
+    <p><strong>The Founder -</strong>Shlok<img src="shlok img 3.png" style="width:150px" class="w3-circle w3-right" alt="Chef"></p><
+    
+<!-- Image of location/map -->
+<img src="https://i.pcmag.com/imagery/roundups/07zK5ZMCRXxdm3S7ZnlT3Xw-6.fit_lim.size_1050x.png" class="w3-image w3-greyscale" style="width:100%; height:50%;" id="myMap">
+
+
+
+<!-- Contact -->
+<div class="w3-container w3-padding- w3-blue w3-grayscale  w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Call up our landline - 6364686868</p>
+    <p><span class="w3-tag">FYI!</sp64an>We provide a lower resolution version of the final product before recieving the payment incase any changes are required.</p>
+    <p class="w3-xxlarge"><strong>Enroll</strong> today and join us!</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Date of birth" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Deadline" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Service you require" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<center>
+<video width="250" height="550" controls>
+  <source src="We-Vid promo compress.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+</center>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
